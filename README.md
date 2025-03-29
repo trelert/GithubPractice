@@ -39,3 +39,69 @@ Ahora en GitHub Desktop podemos observar que el archivo `README.md` ahora aparec
 
 Luego, agrega un *mensaje de commit* en el cuadro de abajo. El mensaje de commit debe ser una breve descripción de lo que lograste con tu modificación. Por ejemplo, un buen mensaje aquí podría ser "Agregar nombre a README.md". Una vez que hayas ingresado el mensaje de commit, haz clic en el gran botón azul "Commit".
 
+## 5. Crear una Carpeta y un Archivo
+
+Pero espera, hagamos más. Crea una nueva carpeta llamada `practica_git` dentro del repositorio clonado. Luego, crea un archivo index.html en esta carpeta y un archivo app.js vacío.
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github</title>
+
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+    <h1>Click to get new jokes!</h1>
+    <button>Click me!</button>
+    <ul id="jokes"></ul>
+  </body>
+</html>
+``` 
+
+## 6. Agregar y Confirmar Cambios (Commit)
+
+Ahora, agrega tu código html con un mensaje de commit informativo y confirma el archivo.
+
+## 7. Subir (Push)
+
+Ya tenemos hechos algunos cambios locales, lo siguiente es *subir* nuestro código de nuevo a GitHub. Esto nos permitirá compartir nuestro código con otros.
+
+Para subir tu código, simplemente haz clic en el botón "Push" en la parte superior derecha de GitHub Desktop. Antes de hacer clic, puedes notar que el botón indica la cantidad de commits que has hecho desde tu último push. Después de hacer clic en el botón, ya no tendrás más commits pendientes de subir.
+
+## 8. Inspeccionar en GitHub
+
+Ahora ve a la URL de tu proyecto en GitHub e inspecciona el nuevo archivo `README.md`. También puedes echar un vistazo al html que subimos.
+
+## 9. Obtener Cambios (Pull)
+
+¿Qué sucede si hay un cambio hecho en GitHub que no está presente en tu repositorio local? Esta es una situación común cuando se colabora o si trabajas en distintas máquinas. Tu compañero hizo una cambio en el código que te gustaría tener. Para hacerlo, necesitas *obtener (pull)* los cambios.
+
+Para practicar el proceso de "pull", primero necesitamos hacer un cambio en GitHub web. Edita el archivo `README.md` de nuevo, lo cual puedes hacer navegando hasta el archivo y haciendo clic en el ícono del lápiz.
+
+> Soy \[tu nombre\] y edité este archivo desde GitHub web.
+
+Al final de la pantalla de edición, se te pedirá que confirmes el cambio con un mensaje de commit.
+
+Ahora vamos a obtener este cambio en nuestro repositorio local. En GitHub Desktop, el botón que antes decía "Push" ahora debería decir "Fetch" o "Pull" con un indicador del número de commits disponibles para obtener. Si dice "Fetch", haz clic una vez y espera a que diga "Pull". Una vez que diga "Pull", haz clic nuevamente y espera unos momentos para completar la actualización.
+
+Finalmente, revisa el archivo `README.md` en tu máquina local. El cambio que hiciste en línea ahora debería estar reflejado en tu archivo local también.
+
+## 10. Descartar y Revertir Cambios
+
+Una gran ventaja de trabajar con un sistema de control de versiones como git es que puedes deshacer errores fácilmente volviendo a la última versión "buena" de tu proyecto. Hay múltiples maneras de hacerlo. Nos enfocaremos en dos.
+
+### Descartar
+
+Si por algo ya escribiste algo en app.js podemos descartar estos cambios simplemente dando clic derecho sobre el cambio y seleccionando "Discard Changes". Revisa tu archivo nuevamente. Deberías notar que el archivo queda nuevamente vacío.
+
+### Revertir
+
+A veces, no detectamos un error hasta después de haberlo confirmado con un commit, vamos a poner algo en app.js y darle commit, quizá incluso podemos agregar un código inservible.
+
+Para *revertir* el commit, ve a la pestaña "Historial" en GitHub Desktop. Haz clic derecho en el commit con el mensaje que tiene el error y selecciona "Revert Changes in Commit". Esto tendrá el efecto de crear un *nuevo* commit que deshace los cambios en tu commit erróneo. Esto funcionará incluso si has hecho otros commits desde el commit incorrecto; solo los cambios de ese commit serán revertidos.
+
+***Nota***: GitHub Desktop no tiene una opción correspondiente a `git reset`, pero si te sientes cómodo en la terminal y estás familiarizado con este comando, también puedes usar `git reset` para lograr una tarea similar, aunque con diferentes efectos en el historial de commits.
