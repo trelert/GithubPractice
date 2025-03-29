@@ -105,3 +105,43 @@ A veces, no detectamos un error hasta después de haberlo confirmado con un comm
 Para *revertir* el commit, ve a la pestaña "Historial" en GitHub Desktop. Haz clic derecho en el commit con el mensaje que tiene el error y selecciona "Revert Changes in Commit". Esto tendrá el efecto de crear un *nuevo* commit que deshace los cambios en tu commit erróneo. Esto funcionará incluso si has hecho otros commits desde el commit incorrecto; solo los cambios de ese commit serán revertidos.
 
 ***Nota***: GitHub Desktop no tiene una opción correspondiente a `git reset`, pero si te sientes cómodo en la terminal y estás familiarizado con este comando, también puedes usar `git reset` para lograr una tarea similar, aunque con diferentes efectos en el historial de commits.
+
+### 11. Crear una branch o rama
+
+Cuando se quieren hacer distintas modificaciones pero no quieren arriesgar modificar su archivo general se puede hacer una branch, que solo es un commit aparte que puede ser ignorado o puede juntarse a nuestra branch principal en un futuro
+
+Vamos a crear una branch llamada funcionalidad-api, una vez creada nos aseguramos de estar en la branch nueva, si por algo no lo estamos la seleccionamos donde dice "current branch"
+
+Una vez en ella vamos al archivo app.js y agregamos el siguiente código.
+
+```JS
+const jokes = document.querySelector("#jokes");
+const button = document.querySelector("button");
+
+const addNewJoke = async () => {
+  const jokeText = await getDadJoke();
+  const newLI = document.createElement("LI");
+  newLI.append(jokeText);
+  jokes.append(newLI);
+};
+
+const getDadJoke = async () => {
+  try {
+    const res = await fetch("https://icanhazdadjoke.com/", {
+      headers: { Accept: "application/json" }
+    });
+    const data = await res.json();
+    return data.joke;
+  } catch (e) {
+    return "NO JOKES AVAILABLE! SORRY :(";
+  }
+};
+
+button.addEventListener("click", addNewJoke);
+``` 
+Hacemos commit y push a los cambios
+
+
+### 15. No dupliquen archivos
+
+Un principio importante del control de versiones es que **nunca** dupliquemos archivos. En lugar de tener `proyecto_V1.html`, `version_final.html`, `version_final_REAL.html`, `version_final_REAL_funciona_3.html`, deberías confirmar tu código en cada etapa (o incluso con mayor frecuencia). Siempre podrás volver atrás y encontrar las versiones anteriores en el historial de commits.
