@@ -177,3 +177,16 @@ Pueden eliminar dichos símbolos y quedarse con las líneas que quieran, pueden 
 ### B. No dupliquen archivos
 
 Un principio importante del control de versiones es que **nunca** dupliquemos archivos. En lugar de tener `proyecto_V1.html`, `version_final.html`, `version_final_REAL.html`, `version_final_REAL_funciona_3.html`, deberías confirmar tu código en cada etapa (o incluso con mayor frecuencia). Siempre podrás volver atrás y encontrar las versiones anteriores en el historial de commits.
+
+### C. OTROS
+
+¿gitignore?
+¿PRs?
+¿git y github?
+¿Que tipos de archivos?
+¿Cherry picking?
+
+https://git-scm.com/book/en/v2
+https://training.github.com/downloads/github-git-cheat-sheet.pdf
+https://docs.github.com/en/get-started/git-basics/set-up-git
+https://rogerdudler.github.io/git-guide/
