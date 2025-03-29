@@ -142,6 +142,10 @@ button.addEventListener("click", addNewJoke);
 Hacemos commit y push a los cambios
 
 
+### 13. Merge o unión de ramas
+
+Para traer nuestros cambios hechos en la branch a nuestro código principal vamos a cambiar a la branch main y presionar el botón "choose a branch to merge into main"
+
 ### 15. No dupliquen archivos
 
 Un principio importante del control de versiones es que **nunca** dupliquemos archivos. En lugar de tener `proyecto_V1.html`, `version_final.html`, `version_final_REAL.html`, `version_final_REAL_funciona_3.html`, deberías confirmar tu código en cada etapa (o incluso con mayor frecuencia). Siempre podrás volver atrás y encontrar las versiones anteriores en el historial de commits.
