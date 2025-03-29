@@ -139,8 +139,15 @@ const getDadJoke = async () => {
 
 button.addEventListener("click", addNewJoke);
 ``` 
+También cambia está línea
+
+> Soy \[tu nombre\] y cambié esto en una branch.
+
 Hacemos commit y push a los cambios
 
+### 12. Revisando la rama
+
+Podrán observar que si cambiamos a nuestra rama principal el cambio hecho no existe, pero en la nueva si se encuentra.
 
 ### 13. Merge o unión de ramas
 
