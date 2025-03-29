@@ -141,6 +141,9 @@ button.addEventListener("click", addNewJoke);
 ``` 
 Hacemos commit y push a los cambios
 
+### 12. Revisando la rama
+
+Podrán observar que si cambiamos a nuestra rama principal el cambio hecho no existe.
 
 ### 15. No dupliquen archivos
 
