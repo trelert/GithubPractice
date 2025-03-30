@@ -185,6 +185,7 @@ Un principio importante del control de versiones es que **nunca** dupliquemos ar
 ¿git y github?
 ¿Que tipos de archivos?
 ¿Cherry picking?
+¿Vercel?
 
 https://git-scm.com/book/en/v2
 https://training.github.com/downloads/github-git-cheat-sheet.pdf
