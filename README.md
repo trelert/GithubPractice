@@ -29,7 +29,7 @@ En este momento, es solo una copia del [repositorio original](https://github.com
 
 ## 3. Editar un Archivo
 
-En tu clon local del repositorio, abre (`README.md`) y modifica la siguiente línea cambiando "tu nombre"
+En tu clon local del repositorio, abre (`README.md`) y modifica la siguiente línea cambiando "tu nombre completo"
 
 > Soy \[tu nombre completo\] y edité este archivo.
 
@@ -55,7 +55,8 @@ Pero espera, hagamos más. Crea una nueva carpeta llamada `practica_git` dentro 
   </head>
 
   <body>
-    <h1>Click to get new jokes!</h1>
+    <h1>Nombre completo</h1>
+    <h2>Click to get new jokes!</h2>
     <button>Click me!</button>
     <ul id="jokes"></ul>
   </body>
@@ -160,8 +161,9 @@ Si la branch ya no se va a utilizar se puede eliminar, hay distintos flujos de t
 ### 14. Practicando un poco
 
 Agrega en main en su archivo html y crea un commit
+``` html
 <link rel="stylesheet" href="style.css" />
-
+``` 
 Haz una dos branch distintas llamada color-1 y color-2 con un archivo style.css y cambia el título de color, abre tu página web y cambia entre una branch y otra, revisando cómo cambia automáticamente la página (usando live server).
 
 ### A. Resolución de conflictos
