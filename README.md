@@ -180,15 +180,19 @@ Pueden eliminar dichos símbolos y quedarse con las líneas que quieran, pueden 
 
 Un principio importante del control de versiones es que **nunca** dupliquemos archivos. En lugar de tener `proyecto_V1.html`, `version_final.html`, `version_final_REAL.html`, `version_final_REAL_funciona_3.html`, deberías confirmar tu código en cada etapa (o incluso con mayor frecuencia). Siempre podrás volver atrás y encontrar las versiones anteriores en el historial de commits.
 
-### C. OTROS
+### C. Subir a vercel
+[Ir a la página de vercel](https://vercel.com/)
+Import Git Repository
+Seleccionar deployment
+Pasar el link de *****************.vercel.app en la tarea
 
+### D. Temas extras explicados en clase
 ¿gitignore?
 ¿PRs?
 ¿git y github?
-¿Que tipos de archivos?
 ¿Cherry picking?
-¿Vercel?
 
+### E. Links de utilidad
 https://git-scm.com/book/en/v2
 https://training.github.com/downloads/github-git-cheat-sheet.pdf
 https://docs.github.com/en/get-started/git-basics/set-up-git
