@@ -166,6 +166,13 @@ Agrega en main en su archivo html y crea un commit
 ``` 
 Haz una dos branch distintas llamada color-1 y color-2 con un archivo style.css y cambia el título de color, abre tu página web y cambia entre una branch y otra, revisando cómo cambia automáticamente la página (usando live server).
 
+### 15. Subir a vercel
+
+[Ir a la página de vercel](https://vercel.com/)
+Import Git Repository
+Seleccionar deployment
+Pasar el link de *****************.vercel.app en la tarea
+
 ### A. Resolución de conflictos
 
 La mayoría de conflictos son generados por cambios de líneas cuando dos usuarios modifican el mismo archivo sin pasarse los cambios, y estos pueden ser resueltos en github, pero para conflictos más complicados se necesita usar la línea de comando de git, por lo que es bastante útil también entender el uso de git.
@@ -180,19 +187,13 @@ Pueden eliminar dichos símbolos y quedarse con las líneas que quieran, pueden 
 
 Un principio importante del control de versiones es que **nunca** dupliquemos archivos. En lugar de tener `proyecto_V1.html`, `version_final.html`, `version_final_REAL.html`, `version_final_REAL_funciona_3.html`, deberías confirmar tu código en cada etapa (o incluso con mayor frecuencia). Siempre podrás volver atrás y encontrar las versiones anteriores en el historial de commits.
 
-### C. Subir a vercel
-[Ir a la página de vercel](https://vercel.com/)
-Import Git Repository
-Seleccionar deployment
-Pasar el link de *****************.vercel.app en la tarea
-
-### D. Temas extras explicados en clase
+### C. Temas extras explicados en clase
 ¿gitignore?
 ¿PRs?
 ¿git y github?
 ¿Cherry picking?
 
-### E. Links de utilidad
+### D. Links de utilidad
 https://git-scm.com/book/en/v2
 https://training.github.com/downloads/github-git-cheat-sheet.pdf
 https://docs.github.com/en/get-started/git-basics/set-up-git
